@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_shared_departments",
+  "info": {
+    "name": "Department",
+    "icon": "boxes"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

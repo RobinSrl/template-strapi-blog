@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_shared_template_enums",
+  "info": {
+    "name": "TemplateEnum",
+    "icon": "clipboard-list"
+  },
+  "options": {},
+  "attributes": {
+    "value": {
+      "type": "enumeration",
+      "enum": [
+        "blog",
+        "news"
+      ]
+    }
+  }
+}
