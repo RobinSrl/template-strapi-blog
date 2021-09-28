@@ -20,6 +20,16 @@
     },
     "fqdn": {
       "type": "string"
+    },
+    "Template": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.template-enum"
+    },
+    "Department": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.department"
     }
   }
 }
