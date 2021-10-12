@@ -59,7 +59,7 @@ module.exports = {
             source: publinfo.source,
 
           },
-          method: "write"
+          method: "strapi-write"
         }
         console.log(JSON.stringify(result))
 
@@ -81,7 +81,7 @@ module.exports = {
 
       console.log(art)
       const result = {
-        method: "delete",
+        method: "strapi-delete",
         parameters: {
           guid: "https://" + publinfo.fqdn + "/" + art.slug,
         }
