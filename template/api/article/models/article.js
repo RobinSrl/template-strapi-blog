@@ -70,7 +70,7 @@ module.exports = {
             "Connection": "keep-alive",
           }
         }
-        const r = await axios.post(process.env.POLPLEXER, JSON.stringify(result), axiosConfig)
+        const r = await axios.post(process.env.POLPLEXER_URL, JSON.stringify(result), axiosConfig)
         console.log(r.data)
       }
     },
@@ -94,7 +94,7 @@ module.exports = {
           "Connection": "keep-alive",
         }
       }
-      const r = await axios.post(process.env.POLPLEXER, JSON.stringify(result), axiosConfig)
+      const r = await axios.post(process.env.POLPLEXER_URL, JSON.stringify(result), axiosConfig)
       console.log(r.data)
     }
   },
