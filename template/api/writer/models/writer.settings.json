@@ -24,15 +24,15 @@
       "required": false,
       "pluginOptions": {}
     },
-    "articles": {
-      "via": "author",
-      "collection": "article"
-    },
     "email": {
       "type": "string"
     },
     "bio": {
       "type": "text"
+    },
+    "articles": {
+      "via": "authors",
+      "collection": "article"
     }
   }
 }

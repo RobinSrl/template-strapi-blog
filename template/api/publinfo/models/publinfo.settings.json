@@ -21,15 +21,17 @@
     "fqdn": {
       "type": "string"
     },
-    "template": {
-      "type": "component",
-      "repeatable": false,
-      "component": "shared.template-enum"
+    "properties": {
+      "type": "json"
     },
-    "department": {
-      "type": "component",
-      "repeatable": true,
-      "component": "shared.department"
+    "idPublication": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "template": {
+      "type": "string"
     }
   }
 }

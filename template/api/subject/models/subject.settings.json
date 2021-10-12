@@ -1,17 +1,21 @@
 {
   "kind": "collectionType",
-  "collectionName": "categories",
+  "collectionName": "subjects",
   "info": {
-    "name": "category"
+    "name": "subject",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": false
   },
+  "pluginOptions": {},
   "attributes": {
     "name": {
       "type": "string",
-      "required": true
+      "required": true,
+      "unique": true
     },
     "slug": {
       "type": "uid",
@@ -19,7 +23,7 @@
       "required": true
     },
     "articles": {
-      "via": "categories",
+      "via": "subjects",
       "collection": "article"
     }
   }

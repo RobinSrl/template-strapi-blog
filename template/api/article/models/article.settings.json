@@ -29,9 +29,10 @@
       "targetField": "title",
       "required": true
     },
-    "category": {
-      "model": "category",
-      "via": "articles"
+    "categories": {
+      "collection": "category",
+      "via": "articles",
+      "dominant": true
     },
     "image": {
       "model": "file",
@@ -45,9 +46,27 @@
       "required": true,
       "pluginOptions": {}
     },
-    "author": {
+    "authors": {
+      "collection": "writer",
       "via": "articles",
-      "model": "writer"
+      "dominant": true
+    },
+    "gallery": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "subjects": {
+      "via": "articles",
+      "collection": "subject",
+      "dominant": true
     }
   }
 }
