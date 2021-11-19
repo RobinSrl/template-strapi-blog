@@ -32,11 +32,26 @@ module.exports = {
             description: updatedArticle.description,
             content: updatedArticle.content,
             slug: updatedArticle.slug,
-            category: updatedArticle.categories,
-            subject: updatedArticle.subjects,
-            author: updatedArticle.authors,
-            image: updatedArticle.image,
-            gallery: updatedArticle.gallery,
+            category: updatedArticle.categories.map(el => el.name),
+            subject: updatedArticle.subjects.map(el => el.name),
+            author: updatedArticle.authors.map(el => el.name),
+            image: updatedArticle.image ? {
+              jpeg: process.env.STRAPI_URL + updatedArticle.image.url,
+              medium: updatedArticle.image.formats.medium?.url, //strapi non contiene sempre medium
+              thumb: process.env.STRAPI_URL + updatedArticle.image.formats.thumbnail.url,
+              copyright: "",
+              headline: updatedArticle.image.caption
+            } : {},
+            gallery: updatedArticle.gallery ? updatedArticle.gallery.map(el => {
+              return {
+                gallery: process.env.STRAPI_URL + el.url,
+                src: process.env.STRAPI_URL + el.url,
+                medium: process.env.STRAPI_URL + el.formats.medium?.url, //strapi non contiene sempre medium
+                thumb: process.env.STRAPI_URL + el.formats.thumbnail.url,
+                "src-copyright": "",
+                "src-headline": el.caption
+              }
+            }) : [],
             published_at: updatedArticle.published_at,
             created_at: updatedArticle.created_at,
             link: "https://" + publinfo.fqdn + "/" + updatedArticle.slug,
