@@ -1,6 +1,7 @@
 {
   "package": {
     "version": "1.0.0",
+    "name": "prblogs",
     "dependencies": {
       "strapi": "4.0.0",
       "strapi-admin": "4.0.0",
