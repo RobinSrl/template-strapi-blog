@@ -1,24 +1,25 @@
 {
   "package": {
+    "version": "1.0.0",
     "dependencies": {
       "strapi": "4.0.0",
-    "strapi-admin": "4.0.0",
-    "strapi-utils": "^4.0.0",
-    "strapi-plugin-content-type-builder": "^4.0.0",
-    "strapi-plugin-content-manager": "^4.0.0",
-    "strapi-plugin-users-permissions": "^4.0.0",
-    "strapi-plugin-email": "^4.0.0",
-    "strapi-plugin-upload": "^4.0.0",
-    "strapi-plugin-i18n": "^4.0.0",
-    "strapi-connector-bookshelf": "^4.0.0",
-    "knex": "0.21.18",
-    "sqlite3": "5.0.0",
-    "axios": "^0.21.1",
-    "mime-types": "^2.1.27",
-    "passport-google-oauth2": "^0.2.0",
-    "pg": "^8.6.0",
-    "strapi-plugin-graphql": "^4.0.0",
-    "strapi-provider-email-sendgrid": "^4.0.0"
+      "strapi-admin": "4.0.0",
+      "strapi-utils": "^4.0.0",
+      "strapi-plugin-content-type-builder": "^4.0.0",
+      "strapi-plugin-content-manager": "^4.0.0",
+      "strapi-plugin-users-permissions": "^4.0.0",
+      "strapi-plugin-email": "^4.0.0",
+      "strapi-plugin-upload": "^4.0.0",
+      "strapi-plugin-i18n": "^4.0.0",
+      "strapi-connector-bookshelf": "^4.0.0",
+      "knex": "0.21.18",
+      "sqlite3": "5.0.0",
+      "axios": "^0.21.1",
+      "mime-types": "^2.1.27",
+      "passport-google-oauth2": "^0.2.0",
+      "pg": "^8.6.0",
+      "strapi-plugin-graphql": "^4.0.0",
+      "strapi-provider-email-sendgrid": "^4.0.0"
     }
   }
 }
